@@ -1,6 +1,8 @@
 <script setup>
 import PostList from '../components/PostList.vue'
 import getPost from '../common/getPost'
+import Loading from '../components/Loading.vue';
+import TagsCloud from '../components/TagsCloud.vue';
 const {posts,loadData}=getPost()
 
 
@@ -12,9 +14,10 @@ loadData()
  <div class="home">
     <div v-if="posts.length" class="layout">
       <PostList :postArr="posts" />
+      <TagsCloud :postArr="posts" />
     </div>
     <div v-else>
-      加载中...
+     <Loading />
     </div>
  </div>
 </template>

@@ -1,7 +1,4 @@
 
-<script setup>
-
-</script>
 <template>
     <header>
        <h1>个人博客</h1>
@@ -17,6 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 nav a{
     padding: 5px;
