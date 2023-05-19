@@ -8,7 +8,7 @@ import Loading from '../components/Loading.vue';
 //const id=route.params.id
 
 
-
+// 路由配置props:true后可以通过props传参
 const props=defineProps({
     id:Number
   })
